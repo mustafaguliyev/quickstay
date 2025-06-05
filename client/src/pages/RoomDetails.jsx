@@ -1,4 +1,4 @@
-import { useParams } from "next/navigation";
+
 import React, { useEffect, useState } from "react";
 import {
   assets,
@@ -7,9 +7,10 @@ import {
   roomsDummyData,
 } from "../assets/assets";
 import StarRating from "../components/StarRating";
+import { useParams } from "react-router-dom";
 
 function RoomDetails() {
-  const { id } = useParams;
+  const { id } = useParams();
   const [room, setRoom] = useState(null);
   const [mainImage, setMainImage] = useState(null);
 
