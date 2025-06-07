@@ -13,7 +13,7 @@ function App() {
   return (
     <ClerkProvider publishableKey={PUBLISHABLE_KEY} afterSignOutUrl="/">
       <BrowserRouter>
-      <RoomDetails/>
+
         <Routing />
       </BrowserRouter>
     </ClerkProvider>

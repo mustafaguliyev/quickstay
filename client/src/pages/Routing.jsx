@@ -13,9 +13,12 @@ import ListRoom from '../pages/hotelOwner/ListRoom'
 import Navbar from '../components/Navbar'
 export default function Routing() {
   const isOwnerPath = useLocation().pathname.includes("owner")
-    
+
   return (
+      
+
     <div>
+     
       {!isOwnerPath && <Navbar />}
       {/* {false && <HotelReg />} */}
       <div className='min-h-[70vh]'>
@@ -25,15 +28,20 @@ export default function Routing() {
           <Route path='/rooms/:id' element={<RoomDetails />} />
           <Route path='/my-bookings' element={<MyBookings />} />
           <Route path='/owner' element={<Layout />}>
-            <Route index element={<Dashboard/>} />
-            <Route path="add-room" element={<AddRoom/>}/>
-            <Route path="list-room" element={<ListRoom/>} />
+            <Route index element={<Dashboard />} />
+            <Route path="add-room" element={<AddRoom />} />
+            <Route path="list-room" element={<ListRoom />} />
 
           </Route>
+
         </Routes>
 
       </div>
+
+
+
       <Footer />
+
     </div>
   )
 }

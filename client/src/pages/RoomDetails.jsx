@@ -15,7 +15,7 @@ function RoomDetails() {
   const [mainImage, setMainImage] = useState(null);
 
   useEffect(() => {
-    const room = roomsDummyData.find((room) => room._ === id);
+    const room = roomsDummyData.find((room) => room._id === id);
     if (room) {
       setRoom(room);
       setMainImage(room.images[0]);
@@ -188,6 +188,7 @@ function RoomDetails() {
               md:w-18
               rounded-full
             />  
+            
           
             <div>
                 <p className="text-lg md:text-xl">Hosted by {room.hotel.name}</p>

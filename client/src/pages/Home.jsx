@@ -13,6 +13,9 @@ function Home() {
         <ExclulisiveOffers/>
         <Testimonial/>
         <NewsLetter/>
+        
+      
+
 
     </>
   )
